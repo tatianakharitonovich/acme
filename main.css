@@ -1,0 +1,138 @@
+/* main styles */
+
+.main__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 6.625rem 0 8.625rem;
+}
+
+.main__intro_slogan {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.main__intro_text {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--second-color);
+}
+
+.main__cards {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border: 0.25rem solid var(--main-color);
+}
+
+.main__cards::before,
+.main__cards::after {
+  position: absolute;
+  content: '';
+  width: 0.25rem;
+  height: 100%;
+  left: calc(50% - 0.125rem);
+  background: var(--main-color);
+}
+
+.main__cards::after {
+  width: 100%;
+  height: 0.25rem;
+  left: 0;
+  top: calc(50% - 0.125rem);
+}
+
+.main__cards_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.25rem;
+  width: 50%;
+  min-height: 35.875rem;
+  padding: 4rem;
+}
+
+.main__cards_logo {
+  position: relative;
+  margin-top: 0.25rem;
+  min-width: 4rem;
+  height: 4rem;
+  border: 2rem solid var(--second-color);
+  border-radius: 50%;
+}
+
+.main__cards_content {
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.main__cards_title {
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.main__cards_text {
+  line-height: 1.5;
+}
+
+.main__cards_logo::before {
+  position: absolute;
+  content: '';
+  background: var(--main-bg-color);
+}
+
+.main__cards_card:nth-child(1) .main__cards_logo::before,
+.main__cards_card:nth-child(4) .main__cards_logo::before {
+  top: -2rem;
+  left: -2rem;
+  width: 4rem;
+  height: 2rem;
+}
+
+.main__cards_card:nth-child(2) .main__cards_logo::before {
+  top: -2rem;
+  width: 2rem;
+  height: 4rem;
+}
+
+.main__cards_card:nth-child(3) .main__cards_logo::before {
+  top: -1rem;
+  left: -1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.main__cards_card:nth-child(4) .main__cards_logo::before {
+  top: -1rem;
+  left: -1rem;
+}
+
+.main__cards_card:nth-child(3) .main__cards_logo,
+.main__cards_card:nth-child(4) .main__cards_logo {
+  border: 1rem solid var(--second-color);
+}
+
+.main__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 8.625rem 0 8.75rem;
+}
+
+.main__list_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main__list_item {
+  font-weight: 600;
+  line-height: 1.0625;
+}
+
+.main__swiper {
+  position: relative;
+  padding-bottom: 12rem;
+}

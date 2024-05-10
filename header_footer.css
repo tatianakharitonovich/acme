@@ -1,0 +1,90 @@
+/* The sizes of margins, padding, blocks are adjusted by 1px so that all sizes are multiples of 1rem. */
+
+/* header styles */
+.header {
+  width: 100%;
+  border-bottom: 0.25rem solid var(--second-color);
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1.5rem 1.75rem;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+/* footer styles */
+
+.footer {
+  padding-bottom: 6rem;
+}
+
+.footer__about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding: 2.5rem 0 5rem;
+  border-top: 0.25rem solid var(--second-color);
+}
+
+.footer__nav {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.footer__nav_group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__nav_title {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.footer__nav_link {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--second-color);
+}
+
+.footer__contacts_nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer__contacts_link {
+  line-height: 1.5;
+  color: var(--second-color);
+}
+
+.footer__contacts_nets {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.footer__contacts_media {
+  height: 2.875rem;
+}
+
+.footer__contacts_media:hover {
+  transform: scale(1.1);
+}

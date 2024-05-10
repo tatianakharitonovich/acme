@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* website color palette */
+:root {
+  --main-bg-color: rgba(255, 219, 4, 1);
+  --main-color: rgba(0, 0, 0, 1);
+  --second-color: rgba(33, 33, 33, 1);
+  --slider-scrollbar: rgba(33, 33, 33, 0.3);
+}
+
+/* basic styles */
+html {
+  min-height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px; // 1rem
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+	font-style: normal;
+  line-height: 1.3;
+  background: var(--main-bg-color);
+  color: var(--main-color);
+}
+
+img {
+  max-width: 100%;
+}
+  
+a {
+  font-weight: 500;
+  text-decoration: none;
+  outline: none;
+  color: var(--main-color);
+  transition: all 0.15s ease-in;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+}
+
+/* Text sizes are 47 px, 33 px, 19 px, etc. adjusted by 1px so that all sizes are multiples of 1rem */
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+button {
+  padding: 0;  
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  transition: all 0.15s ease-in;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo_img {
+  width: 4rem;
+  height: 4rem;
+  border: 1rem solid var(--second-color);
+  border-radius: 50%;
+}
+
+.logo_name {
+  font-weight: 600;
+  line-height: 2.125rem;
+}
+
+.swiper {
+  max-width: 1440px;
+  height: 35rem;
+}
+
+.swiper-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.swiper-scrollbar {
+  max-width: 72.25rem;
+}
+
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+  height: 0.125rem;
+  bottom: 8.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--slider-scrollbar);
+}
+
+.swiper-scrollbar-drag {
+  background-color: var(--second-color);
+}
